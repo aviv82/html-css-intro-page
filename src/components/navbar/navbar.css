@@ -1,0 +1,9 @@
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav-thumb {
+  width: 80px;
+}
