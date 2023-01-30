@@ -1,0 +1,41 @@
+.home-wrap {
+  background-color: var(--light-blue);
+}
+
+.home-intro {
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-1 {
+  text-align: center;
+  font-family: var(--gill-sans);
+  color: var(--white);
+  margin: 2%;
+}
+
+.home-p {
+  margin: 2%;
+  font-family: var(--gill-sans);
+  color: var(--white);
+}
+
+.home-img {
+  align-self: center;
+  width: 200px;
+  margin: 4%;
+}
+
+.home-2 {
+  font-family: var(--gill-sans);
+  color: var(--white);
+  margin: 8%;
+  text-align: center;
+}
+
+.home-buttons {
+  margin: 4%;
+  display: flex;
+  justify-content: space-around;
+}

@@ -2,8 +2,33 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  background-color: var(--med-blue);
+  height: 80px;
 }
 
 .nav-thumb {
-  width: 80px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-self: center;
+  margin-left: 4%;
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  margin-right: 4%;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: var(--white);
+  font-size: 18px;
+  font-family: var(--gill-sans);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--link-hover);
 }

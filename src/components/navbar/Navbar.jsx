@@ -13,28 +13,52 @@ export const Navbar = ({ page }) => {
         alt="navigation bar thumb"
       />
       {page === "home" ? (
-        <nav>
-          <Link to="/media">media</Link>
-          <Link to="/video">video</Link>
-          <Link to="/web">web</Link>
+        <nav className="nav-links">
+          <Link className="nav-link" to="/media">
+            media
+          </Link>
+          <Link className="nav-link" to="/video">
+            video
+          </Link>
+          <Link className="nav-link" to="/web">
+            web
+          </Link>
         </nav>
       ) : page === "media" ? (
-        <nav>
-          <Link to="/">home</Link>
-          <Link to="/video">video</Link>
-          <Link to="/web">web</Link>
+        <nav className="nav-links">
+          <Link className="nav-link" to="/">
+            home
+          </Link>
+          <Link className="nav-link" to="/video">
+            video
+          </Link>
+          <Link className="nav-link" to="/web">
+            web
+          </Link>
         </nav>
       ) : page === "video" ? (
-        <nav>
-          <Link to="/">home</Link>
-          <Link to="/media">media</Link>
-          <Link to="/web">web</Link>
+        <nav className="nav-links">
+          <Link className="nav-link" to="/">
+            home
+          </Link>
+          <Link className="nav-link" to="/media">
+            media
+          </Link>
+          <Link className="nav-link" to="/web">
+            web
+          </Link>
         </nav>
       ) : (
-        <nav>
-          <Link to="/">home</Link>
-          <Link to="/media">media</Link>
-          <Link to="/video">video</Link>
+        <nav className="nav-links">
+          <Link className="nav-link" to="/">
+            home
+          </Link>
+          <Link className="nav-link" to="/media">
+            media
+          </Link>
+          <Link className="nav-link" to="/video">
+            video
+          </Link>
         </nav>
       )}
     </header>
