@@ -1,10 +1,25 @@
 import "./video.css";
 
-import React from "react";
+import React, { useState } from "react";
 import { Navbar } from "../navbar/Navbar";
 import { Footer } from "../footer/Footer";
+import { videoLinks } from "../../links/videoLinks";
+import { ArrowLeft } from "../../svg/ArrowLeft";
+import { ArrowRight } from "../../svg/ArrowRight";
 
 export const Video = () => {
+  const [video, setVideo] = useState(0);
+
+  const leftHandle = () => {
+    video === 0 ? setVideo(videoLinks.length - 1) : setVideo(video - 1);
+    // console.log(video);
+  };
+
+  const rightHandle = () => {
+    video === videoLinks.length - 1 ? setVideo(0) : setVideo(video + 1);
+    // console.log(video);
+  };
+
   return (
     <div className="video-wrap">
       <Navbar page="video" />
@@ -21,74 +36,26 @@ export const Video = () => {
         </section>
         <section className="video-scroll">
           <h3 className="video-3">Some of my past works</h3>
-          <div className="video-view">
-            <h4 className="video-title">Charm Mock Banner</h4>
-            <iframe
-              className="video-iframe"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/Wvv9LKxt60o"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-view">
-            <h4 className="video-title">Re-max Halifax Mock Banner</h4>
-            <iframe
-              className="video-iframe"
-              width="560"
-              height="315"
-              src="https://youtube.com/embed/6sjLomUNGgQ?feature=share"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-view">
-            <h4 className="video-title">Kemetics</h4>
-            <iframe
-              className="video-iframe"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/--vUKs4s5tA"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-view">
-            <h4 className="video-title">Got Soul</h4>
-            <iframe
-              className="video-iframe"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/roDHHGznTF0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-view">
-            <h4 className="video-title">Goner</h4>
-            <iframe
-              className="video-iframe"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/FxpNaWrKYD8"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              allowFullScreen
-            ></iframe>
+          <div className="video-viewer">
+            <h4 className="video-title">{videoLinks[video][1]}</h4>
+            <div className="video-view">
+              <button className="arrow-left" onClick={leftHandle}>
+                <ArrowLeft />
+              </button>
+              <iframe
+                className="video-iframe"
+                width="560"
+                height="315"
+                src={videoLinks[video][0]}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                allowFullScreen
+              ></iframe>
+              <button className="arrow-right" onClick={rightHandle}>
+                <ArrowRight />
+              </button>
+            </div>
           </div>
         </section>
       </article>
@@ -96,13 +63,3 @@ export const Video = () => {
     </div>
   );
 };
-
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/Wvv9LKxt60o"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe>;
