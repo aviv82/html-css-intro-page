@@ -1,5 +1,6 @@
 .home-wrap {
   background-color: var(--light-blue);
+  height: 100%;
 }
 
 .home-intro {
