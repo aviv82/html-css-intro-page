@@ -11,13 +11,13 @@
   height: 60px;
   border-radius: 50%;
   align-self: center;
-  margin-left: 4%;
+  margin-left: 12px;
 }
 
 .nav-links {
-  width: 40%;
+  width: 180px;
   display: flex;
-  margin-right: 4%;
+  margin-right: 12px;
   align-self: center;
   justify-content: space-between;
 }

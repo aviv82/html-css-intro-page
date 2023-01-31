@@ -1,7 +1,7 @@
 .blue {
   color: var(--white);
   font-family: var(--gill-sans);
-  padding: 4px;
+  padding: 14px;
   border-radius: 14px;
   background-color: var(--med-blue);
   border: none;

@@ -9,6 +9,7 @@ import { ArrowRight } from "../../svg/ArrowRight";
 
 export const Media = () => {
   const [media, setMedia] = useState(0);
+  const [view, setView] = useState(false);
 
   const leftHandle = () => {
     media === 0 ? setMedia(mediaLinks.length - 1) : setMedia(media - 1);
@@ -18,6 +19,10 @@ export const Media = () => {
   const rightHandle = () => {
     media === mediaLinks.length - 1 ? setMedia(0) : setMedia(media + 1);
     // console.log(video);
+  };
+
+  const imgHandle = () => {
+    setView(!view);
   };
 
   return (
@@ -41,7 +46,9 @@ export const Media = () => {
                 <ArrowLeft />
               </button>
               <img
-                className="media-img"
+                onClick={imgHandle}
+                className={view === false ? "media-img-s" : "media-img-l"}
+                // className="media-img"
                 src={mediaLinks[media][0]}
                 alt={mediaLinks[media][1]}
               />

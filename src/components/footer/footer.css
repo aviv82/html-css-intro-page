@@ -1,13 +1,13 @@
 .foot-wrap {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 60px;
-  margin-top: 6%;
+  margin-top: 20px;
 }
 
 .foot-link path {
-  margin: 2%;
+  margin: 4px;
   fill: var(--white);
 }
 
@@ -23,8 +23,12 @@
   align-items: center;
 }
 
+.foot-link-item {
+  margin: 8px;
+}
+
 .foot-link-item path {
-  margin: 2%;
+  margin: 4px;
   fill: var(--white);
 }
 

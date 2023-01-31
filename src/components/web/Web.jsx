@@ -54,12 +54,14 @@ export const Web = () => {
                 <ArrowRight />
               </button>
             </div>
-            <a href={webLinks[web][1]}>
-              <Figma />
-            </a>
-            <a href={webLinks[web][2]}>
-              <Website />
-            </a>
+            <div className="web-links">
+              <a href={webLinks[web][1]}>
+                <Figma />
+              </a>
+              <a href={webLinks[web][2]}>
+                <Website />
+              </a>
+            </div>
           </div>
         </section>
       </article>

@@ -3,7 +3,7 @@
 }
 
 .home-intro {
-  margin: 4%;
+  margin: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -12,11 +12,12 @@
   text-align: center;
   font-family: var(--gill-sans);
   color: var(--white);
-  margin: 2%;
+  margin: 10px;
 }
 
 .home-p {
-  margin: 2%;
+  align-self: center;
+  margin: 10px;
   font-family: var(--gill-sans);
   color: var(--white);
 }
@@ -24,18 +25,19 @@
 .home-img {
   align-self: center;
   width: 200px;
-  margin: 4%;
+  margin: 20px;
 }
 
 .home-2 {
   font-family: var(--gill-sans);
   color: var(--white);
-  margin: 8%;
+  margin: 20px;
   text-align: center;
 }
 
 .home-buttons {
-  margin: 4%;
+  margin: 20px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
 }

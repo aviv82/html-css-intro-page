@@ -16,7 +16,8 @@ export const Home = () => {
           <h1 className="home-1">Hello Friends!</h1>
           <p className="home-p">
             Welcome to my page. <br />
-            My name is aviv and I am Developer, teacher, artist and student
+            My name is aviv and I am a <br /> Developer, teacher, artist and
+            student
           </p>
           <img
             className="home-img"
@@ -28,14 +29,14 @@ export const Home = () => {
         <section className="home-work">
           <h4 className="home-2">Check out what I've been up to</h4>
           <div className="home-buttons">
+            <Link to="/web">
+              <Button title="Web" color="blue" />
+            </Link>
             <Link to="/media">
               <Button title="Digital Media" color="blue" />
             </Link>
-            <Link to="/web">
-              <Button title="Web Development" color="blue" />
-            </Link>
             <Link to="/video">
-              <Button title="Video Work" color="blue" />
+              <Button title="Video" color="blue" />
             </Link>
           </div>
         </section>
