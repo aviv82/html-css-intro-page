@@ -1,0 +1,68 @@
+.web-wrap {
+  background-color: var(--light-blue);
+}
+
+.web-intro {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.web-1 {
+  font-family: var(--gill-sans);
+  color: var(--white);
+  text-align: center;
+  margin: 10px;
+}
+
+.web-p {
+  align-self: center;
+  width: 260px;
+  font-family: var(--gill-sans);
+  color: var(--white);
+  margin: 10px;
+}
+
+.web-3 {
+  font-family: var(--gill-sans);
+  color: var(--white);
+  text-align: center;
+  margin: 10px;
+}
+
+.web-title {
+  font-family: var(--gill-sans);
+  color: var(--white);
+  text-align: center;
+  margin: 20px;
+}
+
+.web-viewer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.web-img {
+  width: 248px;
+  height: 200px;
+}
+
+.web-links {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.web-links :nth-child(2) {
+  margin-left: 20px;
+}
+
+.web-links path {
+  fill: var(--white);
+}
+
+.web-links path:hover {
+  fill: var(--link-hover);
+}

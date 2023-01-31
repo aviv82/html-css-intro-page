@@ -1,0 +1,18 @@
+.blue {
+  color: var(--white);
+  font-family: var(--gill-sans);
+  padding: 14px;
+  border-radius: 14px;
+  background-color: var(--med-blue);
+  border: none;
+  margin: 10px;
+}
+
+.blue:hover {
+  background-color: var(--white);
+  color: var(--med-blue);
+}
+
+.blue:active {
+  background-color: var(--link-hover);
+}
