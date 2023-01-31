@@ -2,7 +2,6 @@ import "./web.css";
 import React, { useState } from "react";
 import { Navbar } from "../navbar/Navbar";
 import { Footer } from "../footer/Footer";
-import { Git } from "../../svg/Git";
 import { Figma } from "../../svg/Figma";
 import { Website } from "../../svg/Website";
 import { webLinks } from "../../links/webLinks";
